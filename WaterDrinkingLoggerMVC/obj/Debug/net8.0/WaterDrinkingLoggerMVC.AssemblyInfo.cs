@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WaterDrinkingLoggerMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bdd17e62d483e1363789fd74df0e8395db5ec88")]
 [assembly: System.Reflection.AssemblyProductAttribute("WaterDrinkingLoggerMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WaterDrinkingLoggerMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
