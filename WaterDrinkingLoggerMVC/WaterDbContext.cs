@@ -15,20 +15,6 @@ public class WaterDbContext : DbContext
         _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
     }
     
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        string connectionString = ""; 
-        
-        optionsBuilder.UseSqlServer(connectionString);
-    }
-    
-    public void ConfigureServices(IServiceCollection services)
-    {
-        string connectionString = "";
-        
-        services.AddDbContext<WaterDbContext>(options => options.UseSqlServer(connectionString));
-    }
-    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<WaterDrinking>().HasData(

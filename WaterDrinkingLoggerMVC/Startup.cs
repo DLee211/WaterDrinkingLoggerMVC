@@ -12,15 +12,40 @@ public class Startup
     {
         Configuration = configuration;
     }
+    
+    public void ConfigureDevelopment(IApplicationBuilder app, IWebHostEnvironment env)
+    {
+        if (env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+        else
+        {
+            app.UseExceptionHandler("/Home/Error");
+            app.UseHsts();
+        }
+
+        app.UseHttpsRedirection();
+        app.UseStaticFiles();
+
+        app.UseRouting();
+
+        app.UseAuthorization();
+        
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapRazorPages();
+            endpoints.MapFallbackToPage("/Index");
+        });
+    }
 
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
-
         services.AddMvc();
         
         services.AddDbContext<WaterDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("TESTDB")));
+            options.UseSqlServer(""));
         
         services.AddScoped<IWaterRepository<WaterDrinking>, WaterRepository<WaterDrinking>>();
         services.AddScoped<WaterLoggingService>();

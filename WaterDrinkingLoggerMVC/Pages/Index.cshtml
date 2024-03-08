@@ -1,5 +1,6 @@
 ﻿@page
-@model IEnumerable<WaterDrinkingLoggerMVC.Models.WaterDrinking>
+@using WaterDrinkingLoggerMVC.Models
+@model WaterDrinkingLoggerMVC.Pages.IndexModel
 @{
     ViewData["Title"] = "Water Logging Home page";
 }
@@ -19,13 +20,13 @@
     </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model)
+    @foreach (WaterDrinking waterDrinking in Model.waterLoggings)
     {
         <tr>
-            <td>@item.Id</td>
-            <td>@item.Amount.ToString()</td>
-            <td>@item.Time.ToString()</td>
-            <td>@item.User</td>
+            <td>@waterDrinking.Id</td>
+            <td>@waterDrinking.Amount.ToString()</td>
+            <td>@waterDrinking.Time.ToString()</td>
+            <td>@waterDrinking.User</td>
         </tr>
     }
     </tbody>
