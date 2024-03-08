@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dnll4\OneDrive\Desktop\Photography Website\WaterDrinkingLoggerMVC\WaterDrinkingLoggerMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/dnll4/OneDrive/Desktop/Photography Website/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC/Pages/AddWater.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkV2F0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dnll4/OneDrive/Desktop/Photography Website/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

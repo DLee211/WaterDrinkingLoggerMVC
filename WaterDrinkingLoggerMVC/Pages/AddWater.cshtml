@@ -1,0 +1,27 @@
+﻿@page
+@model WaterDrinkingLoggerMVC.Pages.AddWater
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add Water</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <label for="amount">Amount:</label>
+        <input id="amount" name="Amount" type="number" required />
+
+        <label for="user">User:</label>
+        <input id="user" name="User" type="text" required />
+
+        <button type="submit">Add Water</button>
+    </form>
+</div>
+</body>
+</html>
