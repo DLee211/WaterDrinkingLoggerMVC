@@ -24,4 +24,10 @@ public class IndexModel : PageModel
     {
         waterLoggings = _waterLoggingService.GetAllWaterDrinkings().ToList();
     }
+
+    public IActionResult OnPostDelete(int id)
+    {
+        _waterLoggingService.DeleteWaterDrinking(id);
+        return RedirectToPage("Index");
+    }
 }

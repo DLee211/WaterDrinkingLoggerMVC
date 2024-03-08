@@ -26,6 +26,12 @@
             <td>@waterDrinking.Amount.ToString()</td>
             <td>@waterDrinking.Time.ToString()</td>
             <td>@waterDrinking.User</td>
+            <td>
+                <form method="post" asp-page-handler="Delete">
+                    <input type="hidden" asp-for="@waterDrinking.Id" name="id"/>
+                    <input type="submit" value="Delete" class="btn btn-danger"/>
+                </form>
+            </td>
         </tr>
     }
     </tbody>
