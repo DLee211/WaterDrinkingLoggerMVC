@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using WaterDrinkingLoggerMVC.Models;
 using WaterDrinkingLoggerMVC.Service;
 
+
 public class UpdateModel : PageModel
 {
     private readonly WaterLoggingService _waterLoggingService;

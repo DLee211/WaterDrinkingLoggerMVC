@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\buildMultiTargeting\WaterDrinkingLoggerMVC.props" />
+  <Import Project="../buildMultiTargeting/WaterDrinkingLoggerMVC.props" />
 </Project>

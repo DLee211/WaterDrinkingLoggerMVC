@@ -1,32 +1,27 @@
-﻿@using WaterDrinkingLoggerMVC.Models
-@using Microsoft.AspNetCore.Mvc.TagHelpers
-<table class="table">
-    <thead>
-    <tr>
-        <th>Id</th>
-        <th>Amount</th>
-        <th>Time</th>
-        <th>User</th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (WaterDrinking waterDrinking in Model.waterLoggings)
-    {
-        <tr>
-            <td>@waterDrinking.Id</td>
-            <td>@waterDrinking.Amount.ToString()</td>
-            <td>@waterDrinking.Time.ToString()</td>
-            <td>@waterDrinking.User</td>
-            <td>
-                <a class="btn btn-primary" asp-page="/Update" asp-route-id="@waterDrinking.Id">Edit</a>
-            </td>
-            <td>
-                <form method="post" asp-page-handler="Delete">
-                    <input type="hidden" asp-for="@waterDrinking.Id" name="id"/>
-                    <input type="submit" value="Delete" class="btn btn-danger"/>
-                </form>
-            </td>
-        </tr>
-    }
-    </tbody>
-</table>
+﻿@page
+@model UpdateModel
+@{
+    ViewData["Title"] = "Update Water Drinking Log";
+}
+
+<h2>Update Water Drinking Log</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="WaterDrinking.Id" />
+    <div class="form-group">
+        <label asp-for="WaterDrinking.Amount"></label>
+        <input asp-for="WaterDrinking.Amount" class="form-control" />
+        <span asp-validation-for="WaterDrinking.Amount" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="WaterDrinking.Time"></label>
+        <input asp-for="WaterDrinking.Time" class="form-control" />
+        <span asp-validation-for="WaterDrinking.Time" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="WaterDrinking.User"></label>
+        <input asp-for="WaterDrinking.User" class="form-control" />
+        <span asp-validation-for="WaterDrinking.User" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

@@ -45,7 +45,7 @@ public class Startup
         services.AddMvc();
         
         services.AddDbContext<WaterDbContext>(options =>
-            options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TestDb;Integrated Security=True;"));
+            options.UseSqlServer("Server=localhost,1433;Database=workershifts;User Id=SA;Password=GingerAle@1861;TrustServerCertificate=True;"));
         
         services.AddScoped<IWaterRepository<WaterDrinking>, WaterRepository<WaterDrinking>>();
         services.AddScoped<WaterLoggingService>();

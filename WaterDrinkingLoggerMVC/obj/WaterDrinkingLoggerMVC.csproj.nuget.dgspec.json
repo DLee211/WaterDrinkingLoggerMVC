@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dnll4\\OneDrive\\Desktop\\Photography Website\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC.csproj": {}
+    "/Users/daniel/RiderProjects/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dnll4\\OneDrive\\Desktop\\Photography Website\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC.csproj": {
+    "/Users/daniel/RiderProjects/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dnll4\\OneDrive\\Desktop\\Photography Website\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC.csproj",
+        "projectUniqueName": "/Users/daniel/RiderProjects/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC.csproj",
         "projectName": "WaterDrinkingLoggerMVC",
-        "projectPath": "C:\\Users\\dnll4\\OneDrive\\Desktop\\Photography Website\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC.csproj",
-        "packagesPath": "C:\\Users\\dnll4\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dnll4\\OneDrive\\Desktop\\Photography Website\\WaterDrinkingLoggerMVC\\WaterDrinkingLoggerMVC\\obj\\",
+        "projectPath": "/Users/daniel/RiderProjects/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC.csproj",
+        "packagesPath": "/Users/daniel/.nuget/packages/",
+        "outputPath": "/Users/daniel/RiderProjects/WaterDrinkingLoggerMVC/WaterDrinkingLoggerMVC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dnll4\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/daniel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
