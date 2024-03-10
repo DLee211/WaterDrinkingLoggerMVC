@@ -1,14 +1,5 @@
-﻿@page
-@using WaterDrinkingLoggerMVC.Models
-@model WaterDrinkingLoggerMVC.Pages.IndexModel
-@{
-    ViewData["Title"] = "Water Logging Home page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Water Logging Application</h1>
-</div>
-
+﻿@using WaterDrinkingLoggerMVC.Models
+@using Microsoft.AspNetCore.Mvc.TagHelpers
 <table class="table">
     <thead>
     <tr>
@@ -27,7 +18,7 @@
             <td>@waterDrinking.Time.ToString()</td>
             <td>@waterDrinking.User</td>
             <td>
-                <a class="btn btn-primary" asp-page="Update" asp-route-id="@waterDrinking.Id">Edit</a>
+                <a class="btn btn-primary" asp-page="/Update" asp-route-id="@waterDrinking.Id">Edit</a>
             </td>
             <td>
                 <form method="post" asp-page-handler="Delete">
